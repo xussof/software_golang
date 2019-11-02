@@ -1,0 +1,16 @@
+---
+- name: Adding appt
+  become: true
+  apt_repository:
+    repo: ppa:longsleep/golang-backports
+    state: present
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Install golang-go
+  become: true
+  apt:
+    pkg: "{{ item }}"
+    update_cache: yes
+    state: latest
+  with_items: "{{ software_packages }}"
+  when: ansible_distribution == 'Ubuntu'
