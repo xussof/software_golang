@@ -1,37 +1,37 @@
-software_golang
+# software_golang
 =========
 
 This role will install software_golang software
 
-Requirements
+## Requirements
 ------------
 
 All dependencies will appear on requirements.yml file
 
-Role Variables
+## Role Variables
 --------------
 
 Not defined yet. But in the future we could stage software version in here
 
-Dependencies
+## Dependencies
 ------------
 
 All dependencies will appear on requirements.yml file
 
-Example Playbook
+## Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: xussof.software_golang }
+         - { role: software_golang }
 
-License
+## License
 -------
 
 BSD
 
-Author Information
+## Author Information
 ------------------
-Made by @xussof
+Made by @sergi-canas
